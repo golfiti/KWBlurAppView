@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KWBlurAppView_Example' do
+  pod 'KWBlurAppView', :path => '../'
+
+  target 'KWBlurAppView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

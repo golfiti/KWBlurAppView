@@ -1,0 +1,6 @@
+framework module KWBlurAppView {
+  umbrella header "KWBlurAppView-umbrella.h"
+
+  export *
+  module * { export * }
+}

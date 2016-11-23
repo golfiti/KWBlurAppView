@@ -1,0 +1,16 @@
+PODS:
+  - KWBlurAppView (0.1.0)
+
+DEPENDENCIES:
+  - KWBlurAppView (from `../`)
+
+EXTERNAL SOURCES:
+  KWBlurAppView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KWBlurAppView: 476c39acb723a5c30dc1845a01caea98da4a3c71
+
+PODFILE CHECKSUM: 2119bed7f1f8df58ce185b633e60871a471d5246
+
+COCOAPODS: 1.1.1
