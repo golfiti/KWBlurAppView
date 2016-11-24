@@ -19,10 +19,6 @@ it, simply add the following line to your Podfile:
 pod "KWBlurAppView"
 ```
 
-## Author
-
-Kridsanapong, golfitiz@gmail.com
-
 ## License
 
 KWBlurAppView is available under the MIT license. See the LICENSE file for more info.
