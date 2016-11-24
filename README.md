@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/KWBlurAppView.svg?style=flat)](http://cocoapods.org/pods/KWBlurAppView)
 
 ## Example
-![alt tag](http://i.giphy.com/l3vR75Xh2SuvUbnVe.gif)
+![screenshort](https://github.com/golfiti/KWBlurAppView/blob/master/gif_kwappblur.gif)
 
 ## Requirements
 
