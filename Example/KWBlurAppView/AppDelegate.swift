@@ -30,20 +30,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let delay = seconds * Double(NSEC_PER_SEC)
         let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-//            KWBlurAppView.sharedInstance.showBlurView()
+            KWBlurAppView.sharedInstance.showBlurView()
         })
     }
     
     func applicationDidEnterBackground(application: UIApplication) {
-//        KWBlurAppView.sharedInstance.showBlurView()
+        KWBlurAppView.sharedInstance.showBlurView()
     }
     
     func applicationWillEnterForeground(application: UIApplication) {
-//        KWBlurAppView.sharedInstance.hideBlurView()
+        KWBlurAppView.sharedInstance.hideBlurView()
     }
     
     func applicationDidBecomeActive(application: UIApplication) {
-//        KWBlurAppView.sharedInstance.hideBlurView()
+        KWBlurAppView.sharedInstance.hideBlurView()
     }
 
     

@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		74BFC020FDC25319D30A50AC /* Pods_KWBlurAppView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2BA50D39D9CD9EFD280C17 /* Pods_KWBlurAppView_Example.framework */; };
+		B6CDE2061DE6D53E007F13CA /* KWBlurAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CDE2051DE6D53E007F13CA /* KWBlurAppView.swift */; };
 		E15B91D51C05620D2392C0D8 /* Pods_KWBlurAppView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615BBEDFEDA7FDC7062F15D4 /* Pods_KWBlurAppView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3090E274AC59A27340F65652 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3BDEED0ECEAA769BC553DF72 /* KWBlurAppView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KWBlurAppView.podspec; path = ../KWBlurAppView.podspec; sourceTree = "<group>"; };
-		3DF40DC683E9F994672648C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3090E274AC59A27340F65652 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3BDEED0ECEAA769BC553DF72 /* KWBlurAppView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KWBlurAppView.podspec; path = ../KWBlurAppView.podspec; sourceTree = "<group>"; };
+		3DF40DC683E9F994672648C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4C2BA50D39D9CD9EFD280C17 /* Pods_KWBlurAppView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KWBlurAppView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* KWBlurAppView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWBlurAppView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		7AD652C06A1416F8F6428E50 /* Pods-KWBlurAppView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWBlurAppView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KWBlurAppView_Example/Pods-KWBlurAppView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8049BFD0E32D8723247F100B /* Pods-KWBlurAppView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWBlurAppView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KWBlurAppView_Tests/Pods-KWBlurAppView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		880AE0AAC3B8B92F12F826A0 /* Pods-KWBlurAppView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWBlurAppView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KWBlurAppView_Example/Pods-KWBlurAppView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B6CDE2051DE6D53E007F13CA /* KWBlurAppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KWBlurAppView.swift; sourceTree = "<group>"; };
 		D0B88B9CBA5DCC74B22EFD0C /* Pods-KWBlurAppView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWBlurAppView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KWBlurAppView_Tests/Pods-KWBlurAppView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				B6CDE2051DE6D53E007F13CA /* KWBlurAppView.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for KWBlurAppView";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				B6CDE2061DE6D53E007F13CA /* KWBlurAppView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
