@@ -6,8 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/KWBlurAppView.svg?style=flat)](http://cocoapods.org/pods/KWBlurAppView)
 
 ## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![alt tag](http://i.giphy.com/l3vR75Xh2SuvUbnVe.gif)
 
 ## Requirements
 
