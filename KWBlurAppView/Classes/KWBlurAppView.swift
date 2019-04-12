@@ -11,12 +11,12 @@ class KWBlurAppView: UIView {
 
     class var sharedInstance: KWBlurAppView {
         struct Static {
-            static var onceToken: dispatch_once_t = 0
+            static var onceToken = {
+                Static.instance = KWBlurAppView()
+            }
             static var instance: KWBlurAppView? = nil
         }
-        dispatch_once(&Static.onceToken) {
-            Static.instance = KWBlurAppView()
-        }
+        
         return Static.instance!
     }
 
@@ -24,23 +24,23 @@ class KWBlurAppView: UIView {
 
     func showBlurView() {
         if !UIAccessibilityIsReduceTransparencyEnabled() {
-            self.blurEffectView.effect = UIBlurEffect(style: .Light)
-            self.blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-            self.blurEffectView.frame = (UIScreen.mainScreen().bounds)
+            self.blurEffectView.effect = UIBlurEffect(style: .light)
+            self.blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            self.blurEffectView.frame = (UIScreen.main.bounds)
             self.blurEffectView.alpha = 0
             self.blurEffectView.tag = 80
-            if let window = UIApplication.sharedApplication().delegate?.window {
-                UIView.animateWithDuration(0.0, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            if let window = UIApplication.shared.delegate?.window {
+                UIView.animate(withDuration: 0.0, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
                 }, completion: { (Bool) -> Void in
                     self.blurEffectView.alpha = 1
                     window?.addSubview(self.blurEffectView)
                 })
             }
         } else {
-            let blackColorView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height))
-            blackColorView.backgroundColor = UIColor.blackColor()
+            let blackColorView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+            blackColorView.backgroundColor = UIColor.black
             blackColorView.tag = 80
-            if let window = UIApplication.sharedApplication().delegate?.window {
+            if let window = UIApplication.shared.delegate?.window {
                 window?.addSubview(blackColorView)
             }
         }
@@ -48,19 +48,19 @@ class KWBlurAppView: UIView {
 
     func hideBlurView() {
         if !UIAccessibilityIsReduceTransparencyEnabled() {
-            UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
                 self.blurEffectView.alpha = 0
             }, completion: { (Bool) -> Void in
                 self.blurEffectView.alpha = 1
                 self.blurEffectView.effect = nil
-                if let window = UIApplication.sharedApplication().delegate?.window {
+                if let window = UIApplication.shared.delegate?.window {
                     if let viewWithTag = window!.viewWithTag(80) {
                         viewWithTag.removeFromSuperview()
                     }
                 }
             })
         } else {
-            if let window = UIApplication.sharedApplication().delegate?.window {
+            if let window = UIApplication.shared.delegate?.window {
                 if let viewWithTag = window!.viewWithTag(80) {
                     viewWithTag.removeFromSuperview()
                 }

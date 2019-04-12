@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KWBlurAppView'
-  s.version          = '0.1.1'
+  s.version          = '0.2.0'
   s.summary          = 'blur app screen when switch app'
 
   s.homepage         = 'https://github.com/golfiti/KWBlurAppView'
